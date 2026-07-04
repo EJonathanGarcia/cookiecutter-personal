@@ -1,23 +1,6 @@
-# conda env create --file environment.yml
-name: {{ cookiecutter.project_slug }}
-channels:
-  - anaconda
-  - conda-forge
-  - defaults
+name: template-dev
 dependencies:
-  {% if cookiecutter.project_packages == "All" -%}
-  - fs
-  - jupyter
-  - jupyterlab
-  - pathlib
-  {% endif -%}
+  - python=3.9
   - pip
-  {% if cookiecutter.project_packages == "All" -%}
-  - pyprojroot
-| {% endif -%}
-  - python=3.7 {{ cookiecutter.python_version }}
   - pip:
-    {% if cookiecutter.project_packages == "All" -%}
-    - pyhere
-    {% endif -%}
-    
+    - cookiecutter
