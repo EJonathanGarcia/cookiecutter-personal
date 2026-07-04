@@ -1,6 +1,7 @@
-name: template-dev
+name: cookiecutter-personal
+channels:
+  - coda-forge
+  - defaults
 dependencies:
-  - python=3.9
-  - pip
-  - pip:
-    - cookiecutter
+  - cookiecutter)1.7.3
+prefix: /Users/test/Library/Mobile Documents/com~apple~CloudDocs/Platzi/cookiecutter-personal/cookiecutter-testing
